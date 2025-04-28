@@ -1,0 +1,70 @@
+  <ul class="nav">
+    <li><a href="home">Home</a></li>
+    <li><a href="aboutMe">About Me</a></li>
+    <li><a href="Resume.pdf" target="_blank">Resume</a></li>
+  </ul>
+
+  <div class="slideshow-container">
+
+    <!-- Full-width images with number and caption text -->
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 2</div>
+      <img src="dndv0.1.png">
+
+    </div>
+
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 2</div>
+      <img src="Wireframe.png" >
+    </div>
+
+    <!-- Next and previous buttons -->
+    <a class="prev" (click)="plusSlides(-1)">&#10094;</a>
+    <a class="next" (click)="plusSlides(1)">&#10095;</a>
+  </div>
+
+  <!-- The dots/circles -->
+  <div style="text-align:center">
+    <span class="dot" (click)="currentSlide(1)"></span>
+    <span class="dot" (click)="currentSlide(2)"></span>
+  </div>
+  <div style="text-align:center">
+    <div class="header">
+      <h2>V0.1</h2>
+      <p>This version is focused on the creation of the main functionality of the grid that will be used as the gameboard. </p>
+      </div>
+      <div class="text">
+        <b>Changelog:</b>
+        <ul>
+          <li>Created the main grid in which the dimensions can be changed to fit the needs of the users</li>
+          <li>Boxes within the grid will change size to fill available space based on the dimensions</li>
+          <li>Added zoom functionality to the grid up to 4x</li>
+          <li>Added drag functionality while zoomed to allow users to move across the board as necessary while keeping the grid within its borders</li>
+        </ul>
+      </div>
+      <div class="header">
+        <h2>Future Plans</h2>
+        <p>This wireframe shows a possible design for the future features that will be added to the application. This wireframe will be fleshed out as more features are added and a more clear design starts to shine through.  </p>
+        </div>
+        <div class="text">
+          <b>V.02:</b>
+          <ul>
+            <li>Create game piece functionality</li>
+            <li>Allow the creation of enemy and ally game pieces</li>
+            <li>Upload images to create more detailed game pieces</li>
+          </ul>
+          <br />
+          <b>Functionality Priority</b>
+          <ol type="1">
+            <li>Upload images to the map grid to create a more immersive experience</li>
+            <li>Allow the creation of maps using walls, doors and other features</li>
+            <li>Create login functionality</li>
+            <li>Allow users to save game states to be used at a later time</li>
+            <li>Allow users to invite other users to their game to allow them to see and interact with it</li>
+            <li>Allow users to set privledges for how other users can interact with their game</li>
+            <li>Improve overall design</li>
+          </ol>
+        </div>
+      </div>
+
+
