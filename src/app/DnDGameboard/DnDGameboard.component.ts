@@ -2,9 +2,9 @@ import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-DnD-Game-Board',
-  templateUrl: './DnDGameBoard.component.html',
+  templateUrl: './DnDGameboard.component.html',
   standalone:true,
-  styleUrl: './DnDGameBoard.component.css'
+  styleUrl: './DnDGameboard.component.css'
 })
 export class DnDGameBoardComponent implements OnInit {
   title = 'Portfolio';

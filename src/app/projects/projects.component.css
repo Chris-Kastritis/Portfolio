@@ -1,0 +1,110 @@
+.image {
+  position: relative;
+  background-image: url('../../../public/Wireframe.png'); /* replace with your image path */
+  background-size: cover;
+  background-position: center;
+  aspect-ratio: 6 / 4; /* or 16 / 9, adjust as needed */
+  max-width: 52.5vw; /* optional, limits image width */
+  margin-left: 5.6vw;
+  margin-right: 3vw;
+  margin-bottom: 4.5vh;
+}
+.link {
+  width: 52.5vw;
+  display: block;
+  margin: auto;
+  margin-top: 20vh;
+  flex:1;
+}
+.text1{
+  width: 41vw;
+  margin-right: auto;
+  margin-bottom: 10vh;
+}
+.aboutme {
+  font-size: 3.25vh;
+  color: #939393;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.about{
+  width: fit-content;
+  margin: 4.5vh;
+  flex:1;
+  align-items: center; /* Vertically centers content */
+}
+.projectnum{
+  color: #04AA6D;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 3.75vh;
+  margin-top: 20vh;
+}
+.aboutheader{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 8vh;
+  margin-bottom: 2.5vh;
+}
+.text {
+  position: absolute;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.6); /* semi-transparent background for readability */
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+.gameboard{
+   background-color: #4ba571;
+  display: inline-block;
+  padding: 0px 15px;
+  border: 2px solid #4ba571;
+  border-radius: 1000px;
+  text-decoration: none;
+  color: white;
+  font-family: Helvetica, sans-serif;
+  font-size: 2vw;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+@media screen and (max-width: 600px) {
+  .aboutme{
+    font-size: 1.5vh;
+    margin-top: 2vh;
+  }
+  .aboutheader{
+    font-size: 4vh;
+    margin-top: 0vh;
+    margin-bottom: 0vh;
+  }
+  .projectnum{
+    font-size: 4vh;
+    
+  }
+  .image{
+    margin-bottom: 0vh;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    max-width: 100vw;
+  }
+  .projectnum{
+    margin-top: 0vh;
+  }
+  .text1{
+    width: 80vw;
+    margin-bottom: 5vh;
+  }
+  .about{
+    margin: auto;
+  }
+  .link{
+    width: 90vw;
+    margin-top: 12vh;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .about{
+    display: flex;
+     
+  gap: .7vw; /* Adds space between image and section */
+  }
+}

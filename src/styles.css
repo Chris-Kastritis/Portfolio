@@ -7,43 +7,116 @@
   padding: 0;
   box-sizing: border-box;
 }
-.header {
-  text-align: center;
-  font-size: xx-large;
-  font-family: 'Times New Roman'
+.header-nav-container {
+  display: flex;
+  top: 0;
+  left: 0;
+  z-index: 999; 
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  background-color: #e2e2e2;
+  padding: 2vh 5vw;
+  height: 10vh;
 }
 
-.body {
+.navheader {
+  font-size: 1.9vw;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
 }
 
 .nav {
+  display: flex;
   list-style-type: none;
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  width:100%;
+  gap: 10px; /* spacing between links */
+  align-items: center; /* Aligns all items vertically */
 }
 
-li {
-
-  text-align:left;
+.nav li {
+  display: flex;
+  align-items: center; /* Ensure li aligns its content */
+}
+.nav li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 0px 15px;
+  text-decoration: none;
+  font-size: 1.5vw;
+  font-family: 'Helvetica', sans-serif;
+  line-height: 1.5;
 }
 
-  li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    float: left;
+.nav li a:hover {
+  color: #04AA6D;
+}
+.nav li a.active {
+  color: #04AA6D;
+  font-weight:bold;
+}
+.nav li a.resume {
+  display: inline-block;
+  padding: 0px 15px;
+  border: 2px solid #000;
+  border-radius: 1000px;
+  text-decoration: none;
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 1.5vw;
+  vertical-align: middle;
+}
+.bottom-bar {
+  margin-top: auto;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 2vh 5vw;
+  gap: 2vw;
+  padding-bottom: calc(2vh + env(safe-area-inset-bottom));
+  background-color: #e2e2e2;
+  z-index: 100;
+  align-items: center; /* Vertically centers content */
+}
+
+.footer{
+  font-size: 1.9vw;
+  font-family: 'Helvetica', sans-serif;
+  font-weight: bold;
+}
+.links{
+  max-width:6vh;
+}
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: env(safe-area-inset-bottom); /* Handle Safari safe area */
+  height: 100vh;
+}
+@media screen and (max-width: 600px) {
+  .nav li a {
+  padding: 0px 3px;
+  font-size: 3.25vw;
   }
-
-    /* Change the link color to #111 (black) on hover */
-    li a:hover {
-      background-color: #111;
-    }
-
-.active {
-  background-color: #04AA6D;
+  .nav li a.resume {
+    font-size: 3.25vw;
+    border: 1px solid #000;
+  }
+  .navheader {
+    font-size: 3vw;
+    text-align: center;
+    margin-right: 2vw;
+  }
+  .footer{
+    font-size: 3vw;
+     text-align: center;
+    width: 15vw;
+  }
+  .page-wrapper{
+    height: 100svh;
+  }
 }
